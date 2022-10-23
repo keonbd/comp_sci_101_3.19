@@ -1,0 +1,14 @@
+# Create Solution Below
+budget = int(input('What is the budget? :\n'))
+print()
+total = 0
+count = 0
+while total < budget:
+    project = int(input('Enter an amount of a project :\n'))
+    total = total + project
+    count += 1
+print()
+if total == budget:
+    print("You've hit your budget, with a total of", total, "dollars in ", count," projects")
+else:
+    print("You've exceeded your budget, with a total of", total," dollars in", count," projects")
